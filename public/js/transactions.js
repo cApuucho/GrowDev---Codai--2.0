@@ -5,7 +5,6 @@ let data = {
   transactions: []
 };
 
-
 document.getElementById("button-logout").addEventListener("click", logout);
 
 
@@ -92,7 +91,6 @@ function getTransactions() {
   }
   document.getElementById("transactions-list").innerHTML = transactionsHtml;
 }
-
 
 function saveData(data) {
   localStorage.setItem(data.login, JSON.stringify(data));

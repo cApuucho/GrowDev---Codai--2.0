@@ -4,7 +4,6 @@ const session = localStorage.getItem("session");
 
 checkLogged();
 
-
 // LOGAR NO SISTEMA
 document.getElementById("login-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -72,11 +71,6 @@ function checkLogged() {
     window.location.href = "home.html";
   }
 }
-
-
-
-
-
 
 function saveAccount(data) {
   localStorage.setItem(data.login, JSON.stringify(data));
